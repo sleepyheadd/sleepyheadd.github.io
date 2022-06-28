@@ -3,14 +3,64 @@ body {
 }
 
 h1 {
-  font-family: Arial;
+  font-family: 'Quicksand', serif;
   font-style: italic;
   color: rgb(0, 54, 24);
   text-align: center;
 }
 
+.nav-links {
+
+  display: flex;
+  
+  margin: 0 auto;
+
+  justify-content: space-around;
+
+  width: 60%;
+
+  height: 5%;
+
+  font-family: 'Quicksand', serif;
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  color: black;
+
+  text-decoration: none;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+  background-color: #66e3dd;
+
+}
+
+.nav-links li a.active {
+
+  background-color: #2ca59b;
+
+}
+
 h4 {
-    font-family: Arial;
+    font-family: 'Quicksand', serif;
     color: rgb(0, 0, 37);
     text-align: center;
 }
@@ -20,7 +70,7 @@ img {
 }
 
 p {
-    font-family: sans-serif;
-    font-size: 20px;
+    font-family: 'Quicksand', serif;
+    font-size: 13px;
     text-indent: 20px;
 }
