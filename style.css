@@ -9,6 +9,12 @@ h1 {
   text-align: center;
 }
 
+.radioimage {
+  float: left; 
+  position: absolute; 
+  padding: 1px;
+}
+
 .nav-links {
 
   display: flex;
