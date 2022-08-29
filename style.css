@@ -1,82 +1,33 @@
-body {
-    background-color: rgb(219, 255, 233);
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
+  text-align:center;
   font-family: 'Quicksand', serif;
-  font-style: italic;
-  color: rgb(0, 54, 24);
-  text-align: center;
+  align-self: flex-end;
+  font-size:60px;
+  font-style: bold;
 }
 
-.radioimage {
-  float: left; 
-  position: absolute; 
-  padding: 1px;
-}
-
-.nav-links {
-
-  display: flex;
-  
-  margin: 0 auto;
-
-  justify-content: space-around;
-
-  width: 60%;
-
-  height: 5%;
-
+.head {
+  text-align:left;
   font-family: 'Quicksand', serif;
-
+  align-self: flex-end;
+  font-size:40px;
+  font-style: bold;
 }
 
-.nav-links li {
-
-  list-style: none;
-
-}
-
-.nav-links a {
-
-  color: black;
-
-  text-decoration: none;
-
-  letter-spacing: 3px;
-
-  font-weight: bold;
-
-  font-size: 14px;
-
-  padding: 8px 16px;
-
-}
-
-.nav-links a:hover:not(.active) {
-
-  background-color: #66e3dd;
-
-}
-
-.nav-links li a.active {
-
-  background-color: #2ca59b;
-
-}
-
-h4 {
-    font-family: 'Quicksand', serif;
-    color: rgb(0, 0, 37);
-    text-align: center;
-}
-
-img {
-  padding: 15px;
+.center {
+  padding:100px;
+  padding-bottom: 300px;
+  text-align:center;
 }
 
 p {
-    font-family: 'Quicksand', serif;
-    font-size: 20px;
-    text-indent: 20px;
+  text-align:left;
+  font-family: 'Quicksand', serif;
+  align-self: flex-end;
+  font-size:20px;
 }
