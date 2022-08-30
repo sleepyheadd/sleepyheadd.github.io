@@ -11,6 +11,21 @@ h1 {
   font-style: bold;
 }
 
+.bimg {
+   width: 512px; 
+  height: 512px;
+}
+@media screen and (max-width: 700px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .bimg {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .head {
   text-align:left;
   font-family: 'Quicksand', serif;
