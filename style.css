@@ -44,12 +44,6 @@ h1 {
   font-style: bold;
 }
 
-.center {
-  padding:100px;
-  padding-bottom: 300px;
-  text-align:center;
-}
-
 p {
   text-align:left;
   font-family: 'Quicksand', serif;
