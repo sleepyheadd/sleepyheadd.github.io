@@ -28,10 +28,6 @@ html, body {
   font-size:150%;
 }
 
-#crowdance:hover {
-  transform: scaleX(-1);
-}
-
 .gameicons {
   width:50px; 
   height:auto; 
@@ -80,6 +76,9 @@ html, body {
   }
 }
 
+#crowdance:hover {
+  transform: scaleX(-1);
+}
 #containerOption img {
   width:100px;
 }
