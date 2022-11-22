@@ -1,3 +1,4 @@
+//Start of gallery script
 var x = 0;
 
 function changeImageUp() {
@@ -35,3 +36,21 @@ function changeImage() {
             break;
     }
 }
+//End of gallery script
+
+//Start of choccros clicker
+var total = 0;
+
+function ChocClicked() {
+    var choccros = document.getElementById("choccros");
+    var choctext = document.getElementById("choctext");
+
+    total++;
+    choctext.textContent = total + " Warm Chocolate Croissants";
+
+    choccros.style = "filter: brightness(70%);"
+    setTimeout(function () {
+        choccros.style = "filter: brightness(100%);"
+    }, 50);
+}
+//End of choccros clicker
