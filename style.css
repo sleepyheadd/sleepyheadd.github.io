@@ -117,3 +117,10 @@ a:link, a:hover, a:focus, a:visited {
   text-decoration: none;
   color: initial;
 }
+
+#choccros {
+    float: right;
+}
+#choctext {
+    text-align: right;
+}
