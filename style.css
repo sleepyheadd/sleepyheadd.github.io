@@ -63,11 +63,11 @@ html, body {
 #imageScroll {
     width: 40%;
     height: auto;
-    background-color: rgba(255,255,255, 0.6);
+    background-color: #FFFFFF88;
     border-style: solid;
     border-radius: 10%;
     border-width: 20px;
-    border-color: rgba(255,255,255,0.2);
+    border-color: #FFFFFF22;
 }
 
 @media screen and (max-width: 700px) {
