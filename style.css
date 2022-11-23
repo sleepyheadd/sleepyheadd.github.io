@@ -124,3 +124,13 @@ a:link, a:hover, a:focus, a:visited {
 #choctext {
     text-align: right;
 }
+
+button {
+    margin-bottom: 4px;
+    color: darkolivegreen;
+    background-color: #daffd4;
+    border-color: darkolivegreen;
+    border-style: double;
+    border-radius:5%;
+}
+
