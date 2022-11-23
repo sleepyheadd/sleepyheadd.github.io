@@ -45,11 +45,14 @@
         <img src="Images/arrow.png" onclick="changeImageUp()" style="width: 12%; height: auto; padding-bottom:10%;" />
       
       <br />
-        <div style="padding-top: 200px; margin-right: -70px; display: flex; float: right; ">
-            <p id="choctext">0 Warm Chocolate Croissants</p>
+        <div style="padding-top: 200px; margin-right: -70px; display: flex; float: right; align-items: flex-end;">
+            <div style="display:flex; flex-direction:column; margin-bottom:30px; padding: 10px;">
+                <p id="choctext" style="color: darkolivegreen;">0 Warm Chocolate Croissants</p>
+                <button id="perClick" onclick="IncClick()">(25) +1 Per Click</button>
+                <button id="autoClick" onclick="IncAutoClick()">(50) +1 Auto Click</button>
+            </div>
             <img src="Images/choccros1.png" alt="a chocolate croissant" id="choccros" onclick="ChocClicked()" />
         </div>
-    </div>
 
 
 </body>
