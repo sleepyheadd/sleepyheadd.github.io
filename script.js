@@ -41,16 +41,70 @@ function changeImage() {
 //Start of choccros clicker
 var total = 0;
 
+var perClick = 1;
+var perClickCost = 25;
+
 function ChocClicked() {
     var choccros = document.getElementById("choccros");
     var choctext = document.getElementById("choctext");
 
-    total++;
+    total += perClick;
     choctext.textContent = total + " Warm Chocolate Croissants";
 
     choccros.style = "filter: brightness(70%);"
     setTimeout(function () {
         choccros.style = "filter: brightness(100%);"
     }, 50);
+}
+
+function IncClick() {
+    var perClickId = document.getElementById("perClick")
+
+    if (total >= perClickCost) {
+        total -= perClickCost;
+        perClickCost += 4;
+        perClickCost *= 2;
+        perClick++;
+        perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
+        document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+    } else {
+        perClickId.textContent = "Not enough croissants!!";
+        setTimeout(function () {
+            perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
+        }, 600);
+    }
+}
+
+var autoClick = 0;
+var autoClickCost = 50;
+
+function IncAutoClick() {
+    var autoClickId = document.getElementById("autoClick");
+
+    if (total >= autoClickCost) {
+        total -= autoClickCost;
+        autoClickCost += 2;
+        autoClickCost *= 2;
+        autoClick++;
+        if (autoClick == 1) {
+            AutoClicker();
+        }
+        autoClickId.textContent = "(" + autoClickCost + ") +1 Auto Click";
+        document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+    } else {
+        autoClickId.textContent = "Not enough croissants!!";
+        setTimeout(function () {
+            autoClickId.textContent = "(" + autoClickCost + ") +1 Auto Click";
+        }, 600);
+    }
+}
+
+function AutoClicker() {
+    total += autoClick;
+    document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+
+    setTimeout(function () {
+        AutoClicker();
+    }, 1000);
 }
 //End of choccros clicker
