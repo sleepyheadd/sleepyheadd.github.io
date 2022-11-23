@@ -64,7 +64,11 @@ function IncClick() {
         total -= perClickCost;
         perClickCost -= 2;
         perClickCost *= 2;
-        perClick++;
+        if (perClick > 1) {
+            perClick *= 2;
+        } else {
+            perClick++;
+        }
         perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
         document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
     } else {
@@ -83,12 +87,15 @@ function IncAutoClick() {
 
     if (total >= autoClickCost) {
         total -= autoClickCost;
-        autoClickCost += 2;
-        autoClickCost *= 1.5;
-        Math.round(autoClickCost);
-        autoClick++;
-        if (autoClick == 1) {
+        autoClickCost -= 2;
+        autoClickCost *= 2;
+        if (autoClick == 0) {
             AutoClicker();
+            autoClick++;
+        } else if (autoClick > 1) {
+            autoClick *= 2;
+        } else {
+            autoClick++;
         }
         autoClickId.textContent = "(" + autoClickCost + ") +1 Auto Click";
         document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
