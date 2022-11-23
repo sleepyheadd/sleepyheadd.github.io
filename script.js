@@ -84,8 +84,8 @@ function IncAutoClick() {
     if (total >= autoClickCost) {
         total -= autoClickCost;
         autoClickCost += 2;
-        autoClickCost *= 1.5;
         if (autoClickCost % 2 != 0) { autoClickCost++; }
+        autoClickCost *= 1.5;
         autoClick++;
         if (autoClick == 1) {
             AutoClicker();
