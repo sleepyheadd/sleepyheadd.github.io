@@ -120,6 +120,8 @@ a:link, a:hover, a:focus, a:visited {
 
 #choccros {
     float: right;
+    width:75%;
+    height:auto;
 }
 #choctext {
     text-align: right;
