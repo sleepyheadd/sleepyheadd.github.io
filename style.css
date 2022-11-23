@@ -89,6 +89,9 @@ html, body {
   #imageScroll {
       width: 60%;
   }
+  #choccros {
+      padding-bottom:5%;
+  }
 }
 
 #crowdance:hover {
