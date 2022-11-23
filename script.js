@@ -62,7 +62,7 @@ function IncClick() {
 
     if (total >= perClickCost) {
         total -= perClickCost;
-        perClickCost += 4;
+        perClickCost -= 2;
         perClickCost *= 2;
         perClick++;
         perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
@@ -84,7 +84,7 @@ function IncAutoClick() {
     if (total >= autoClickCost) {
         total -= autoClickCost;
         autoClickCost += 2;
-        autoClickCost *= 2;
+        autoClickCost *= 1.5;
         autoClick++;
         if (autoClick == 1) {
             AutoClicker();
