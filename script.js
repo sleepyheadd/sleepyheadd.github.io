@@ -63,14 +63,11 @@ function IncClick() {
     if (total >= perClickCost) {
         total -= perClickCost;
         perClickCost -= 2;
-        perClickCost *= 2;
-        if (perClick > 1) {
-            perClick *= 2;
-        } else {
-            perClick++;
-        }
+        perClickCost = Math.round(1.5 * perClickCost);
+        perClick++;
         perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
         document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+        document.getElementById("chocdesc").textContent = perClick + " per click / " + autoClick + " per second";
     } else {
         perClickId.textContent = "Not enough croissants!!";
         setTimeout(function () {
@@ -88,17 +85,14 @@ function IncAutoClick() {
     if (total >= autoClickCost) {
         total -= autoClickCost;
         autoClickCost -= 2;
-        autoClickCost *= 2;
-        if (autoClick == 0) {
+        autoClickCost = Math.round(1.3 * autoClickCost);
+        autoClick++;
+        if (autoClick == 1) {
             AutoClicker();
-            autoClick++;
-        } else if (autoClick > 1) {
-            autoClick *= 2;
-        } else {
-            autoClick++;
         }
         autoClickId.textContent = "(" + autoClickCost + ") +1 Auto Click";
         document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+        document.getElementById("chocdesc").textContent = perClick + " per click / " + autoClick + " per second";
     } else {
         autoClickId.textContent = "Not enough croissants!!";
         setTimeout(function () {
