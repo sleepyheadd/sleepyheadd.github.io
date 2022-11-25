@@ -13,7 +13,7 @@ function changeImageDown() {
 
 function changeImage() {
     var image = document.getElementById("imageScroll");
-    var numImage = 4;
+    var numImage = 7;
 
     if (x > numImage-1) {
         x = 0;
@@ -33,6 +33,15 @@ function changeImage() {
             break;
         case 3:
             image.src = "Images/wormdevoursconneticut.png"
+            break;
+        case 4:
+            image.src = "Images/BASIL.png"
+            break;
+        case 5:
+            image.src = "Images/elminXT.png"
+            break;
+        case 6:
+            image.src = "Images/jadeharleybutCOOLER.jpg"
             break;
     }
 }
