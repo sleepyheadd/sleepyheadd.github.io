@@ -37,6 +37,14 @@ html, body {
   padding-bottom:0px;
 }
 
+#gamesImg {
+    width: 450px;
+    height: auto;
+    margin-left: -100px;
+    margin-top: -25px;
+    margin-bottom: -50px;
+}
+
 .bimg {
    width: 512px; 
   height: 512px;
@@ -87,6 +95,12 @@ html, body {
   }
   #choccros {
       padding-bottom:5%;
+  }
+  #gamesImg {
+      width: 350px;
+      height: auto;
+      margin-left:0px;
+      margin-bottom:-20px;
   }
 }
 
