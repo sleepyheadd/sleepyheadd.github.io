@@ -5,21 +5,33 @@ html, body {
   margin-top:0px;
 }
 
+body {
+    background-image: url("Images/background.png");
+    background-repeat: repeat;
+}
+
 #optionContainer {
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #containerOption {
-  margin-bottom:10px;
-  padding: 30px;
-  text-align:left;
-  font-size:100%;
-  font-family: 'Quicksand', serif;
-  width:80%;
-  height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  border-bottom: #757575 3px solid;
-  border-radius:10px;
+    width: 300px;
+    margin: 15px;
+    padding: 30px;
+    padding-top:10px;
+    font-size: 100%;
+    font-family: 'Quicksand', serif;
+    border-bottom: #757575 3px solid;
+    border-radius: 10px;
+}
+#containerOption:hover {
+  opacity:0.5;
 }
 #containerOption h2{
   text-shadow: 0px 2px #d4d4d4;
@@ -40,7 +52,6 @@ html, body {
 #gamesImg {
     width: 450px;
     height: auto;
-    margin-left: -100px;
     margin-top: -25px;
     margin-bottom: -50px;
 }
@@ -93,9 +104,6 @@ html, body {
   #imageScroll {
       width: 60%;
   }
-  #choccros {
-      padding-bottom:5%;
-  }
   #gamesImg {
       width: 350px;
       height: auto;
@@ -126,10 +134,13 @@ p {
   font-size:20px;
 }
 
+#containerOption p {
+    text-align: center;
+}
+
 #choccros {
     float: right;
-    width:50%;
-    height:auto;
+    width: 50%;
 }
 #choctext {
     text-align: right;
@@ -144,3 +155,7 @@ button {
     border-radius:5%;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color:darkslateblue;
+    text-decoration: none;
+}
