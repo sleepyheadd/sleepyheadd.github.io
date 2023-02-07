@@ -8,34 +8,42 @@
   href="https://fonts.googleapis.com/css?family=Quicksand">
   <title>Devin Beck</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="radiotwoerss.png" type="image/icon type">
+  <link rel="icon" href="Images/moonlogo.png" type="image/icon type">
 </head>
 
 <body>
     <script src="script.js"></script>
     <div>
-        <img src="Images/radiotowersheader.png" alt="Radiotower Title" style="width:65%; height:auto; display:block; margin-left:auto; margin-right:auto; padding: 25px">
+        <img src="Images/moonbread.png" alt="Radiotower Title" style="width:65%; height:auto; display:block; margin-left:auto; margin-right:auto; padding: 25px">
         <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; position:absolute; top:20px; right: 0px;">
         <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; position:absolute; top:20px; left: 0px;">
     </div>
     <hr><br>
 
-    <div id="wrapper" class="center">
-        <img src="Images/radiotwoerss.png" alt="Radiotower Art" style="display: flex; float:right; padding: 10px;">
-        <img src="Images/games!.png" alt="Games!" id="gamesImg"/>
-        <div id="optionContainer">
-            <div id="containerOption" style="background-image: linear-gradient(#ffffff, #C0FFFB);">
-                <img src="Images/ufo.png" alt="Interstellar Outlaw" class="gameicons">
-                <h2>Interstellar Outlaw</h2>
-                <a href="IntOutlaw WebGL/interstellaroutlaw.html">Play the game in browser</a><h2></h2>
-                <a href="https://radiotowers.itch.io/interstellaroutlaw">Download from itch.io</a>
+        <div id="wrapper" class="center" style="background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.7),rgba(255,255,255,0.4),rgba(255,255,255,0)); ">
+            <img src="Images/games!.png" alt="Games!" id="gamesImg" />
+            <div id="optionContainer">
+                <a href="https://moonbreadgames.itch.io/interstellaroutlaw">
+                    <div id="containerOption" style="background-image: linear-gradient(#ffffff, #C0FFFB);">
+                        <h2>Interstellar Outlaw</h2>
+                        <div><img src="Images/ufo.png" alt="Interstellar Outlaw"></div>
+                    </div>
+                </a>
+                <a href="https://moonbreadgames.itch.io/voidrunner">
+                    <div id="containerOption" style="background-image: linear-gradient(#ffffff, #C0FFFB);">
+                        <h2>Void Runner</h2>
+                        <div><img src="Images/roadCone.png" alt="Void Runner" style="border-radius: 10px;"></div>
+                    </div>
+                </a>
+                    <div id="containerOption" style="background-image: linear-gradient(#ffffff, #C0FFFB);">
+                        <h2>Panicked Pizzas! (WIP)</h2>
+                        <div><img src="Images/pizzaguy.png" alt="Panicked Pizzas!"></div>
+                    </div>
             </div>
-            <div id="containerOption" style="background-image: linear-gradient(#ffffff, #E8E8E8);"><img src="Images/blob.png" alt="Confection Resurrection" class="gameicons"><h2>Confection Resurrection</h2>Under construction!</div>
+            <p style="text-align: center;"><a href="https://moonbreadgames.itch.io">[All games can be found at my itch.io!]</a></p>
         </div>
-      <p>Other, tinier games: <a href="https://radiotowers.itch.io/voidrunner">Void Runner</a></p>
-    </div>
 
-    <div id="wrapper" class="center" style="color: darkolivegreen; background-image: linear-gradient(#ffffff, #daffd4); padding-bottom:150px;">
+    <div id="wrapper" class="center" style="padding-bottom:150px;">
         <img src="Images/boyandbeetransparent.png" alt="A Boy and a Bee" class="bimg" style="display: flex; float:left; padding: 10px;">
         <p class="head">Art and Stuff</p>
         <p><a href="https://www.instagram.com/alphabetsoooup/">[My art stuff can be found here]</a>! I don't post often but I like to use it as a place to collect finished drawings.</p>
@@ -43,24 +51,24 @@
         <p>The best way to get in touch with me would be at dmbeck9459@gmail.com :)</p>
     </div>
 
-    <div id="wrapper" class="center" style="padding-bottom:550px; background-image: linear-gradient(#daffd4, #C0FFFB);">
+    <div id="wrapper" class="center" style="padding-bottom:550px;">
         <h1 style="font-size: 80px; font-weight: bold; text-shadow: 0px 2px #cccccc; color:darkolivegreen;">Gallery</h1>
 
         <img src="Images/arrow.png" onclick="changeImageDown()" style="transform: scaleX(-1); width: 12%; height: auto; padding-bottom: 10%;" />
         <img src="Images/catboyyy.png" id="imageScroll" alt="a cat person" />
         <img src="Images/arrow.png" onclick="changeImageUp()" style="width: 12%; height: auto; padding-bottom:10%;" />
-      
-      <br />
+
+        <br />
         <div style="padding-top: 200px; display: flex; float: right; align-items: center;">
             <div style="display:flex; flex-direction:column; padding: 10px;">
                 <p id="choctext" style="color: darkolivegreen;">0 Warm Chocolate Croissants</p>
-              <p id="chocdesc" style="color: darkolivegreen; font-size:15px;">1 per click / 0 per second</p>
+                <p id="chocdesc" style="color: darkolivegreen; font-size:15px;">1 per click / 0 per second</p>
                 <button id="perClick" onclick="IncClick()">(25) +1 Per Click</button>
                 <button id="autoClick" onclick="IncAutoClick()">(50) +1 Auto Click</button>
             </div>
-            <img src="Images/choccros1.png" alt="a chocolate croissant" id="choccros" onclick="ChocClicked()" />
+            <img src="Images/choccros1.png" alt="a chocolate croissant" id="choccros" onclick="ChocClicked()"/>
         </div>
+    </div>
 </body>
 
 </html>
-
