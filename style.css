@@ -140,7 +140,8 @@ p {
 
 #choccros {
     float: right;
-    width: 50%;
+    width: 256px;
+    height: auto;
 }
 #choctext {
     text-align: right;
@@ -151,7 +152,7 @@ button {
     color: darkolivegreen;
     background-color: #daffd4;
     border-color: darkolivegreen;
-    border-style: double;
+    border-width: 2px;
     border-radius:5%;
 }
 
