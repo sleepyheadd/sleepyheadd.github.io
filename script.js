@@ -1,5 +1,7 @@
 //Start of gallery script
 var x = 0;
+var buttonPayout = 1;
+var autoActivated = false;
 
 function changeImageUp() {
     x++;
@@ -73,14 +75,14 @@ function IncClick() {
         total -= perClickCost;
         perClickCost -= 2;
         perClickCost = Math.round(1.5 * perClickCost);
-        perClick++;
-        perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
+        perClick += buttonPayout;
+        perClickId.textContent = "(" + perClickCost + ") +" + buttonPayout + " Per Click";
         document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
         document.getElementById("chocdesc").textContent = perClick + " per click / " + autoClick + " per second";
     } else {
         perClickId.textContent = "Not enough croissants!!";
         setTimeout(function () {
-            perClickId.textContent = "(" + perClickCost + ") +1 Per Click";
+            perClickId.textContent = "(" + perClickCost + ") +" + buttonPayout + " Per Click";
         }, 600);
     }
 }
@@ -95,17 +97,42 @@ function IncAutoClick() {
         total -= autoClickCost;
         autoClickCost -= 2;
         autoClickCost = Math.round(1.3 * autoClickCost);
-        autoClick++;
-        if (autoClick == 1) {
+        autoClick += buttonPayout;
+        if (autoClick == buttonPayout && !autoActivated) {
+            autoActivated = true;
             AutoClicker();
         }
-        autoClickId.textContent = "(" + autoClickCost + ") +1 Auto Click";
+        autoClickId.textContent = "(" + autoClickCost + ") +" + buttonPayout + " Auto Click";
         document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
         document.getElementById("chocdesc").textContent = perClick + " per click / " + autoClick + " per second";
     } else {
         autoClickId.textContent = "Not enough croissants!!";
         setTimeout(function () {
-            autoClickId.textContent = "(" + autoClickCost + ") +1 Auto Click";
+            autoClickId.textContent = "(" + autoClickCost + ") + " + buttonPayout + " Auto Click";
+        }, 600);
+    }
+}
+
+var clickIncCost = 200;
+
+function IncButtonPayout() {
+    var clickIncId = document.getElementById("increaseButton");
+    var autoClickId = document.getElementById("autoClick");
+    var perClickId = document.getElementById("perClick")
+
+    if (total >= clickIncCost) {
+        total -= clickIncCost;
+        clickIncCost = Math.round(2.2 * clickIncCost);
+        buttonPayout*=2;
+        clickIncId.textContent = "(" + clickIncCost + ") Double Button Upgrade Amount";
+        document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+
+        autoClickId.textContent = "(" + autoClickCost + ") +" + buttonPayout + " Auto Click";
+        perClickId.textContent = "(" + perClickCost + ") +" + buttonPayout + " Per Click";
+    } else {
+        autoClickId.textContent = "Not enough croissants!!";
+        setTimeout(function () {
+            clickIncId.textContent = "(" + clickIncCost + ") Double Button Upgrade Amount";
         }, 600);
     }
 }
