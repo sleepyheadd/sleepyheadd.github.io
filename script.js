@@ -130,7 +130,7 @@ function IncButtonPayout() {
         autoClickId.textContent = "(" + autoClickCost + ") +" + buttonPayout + " Auto Click";
         perClickId.textContent = "(" + perClickCost + ") +" + buttonPayout + " Per Click";
     } else {
-        autoClickId.textContent = "Not enough croissants!!";
+        clickIncId.textContent = "Not enough croissants!!";
         setTimeout(function () {
             clickIncId.textContent = "(" + clickIncCost + ") Double Button Upgrade Amount";
         }, 600);
