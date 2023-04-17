@@ -1,7 +1,5 @@
 //Start of gallery script
 var x = 0;
-var buttonPayout = 1;
-var autoActivated = false;
 
 function changeImageUp() {
     x++;
@@ -52,6 +50,8 @@ function changeImage() {
 //Start of choccros clicker
 var total = 0;
 
+var buttonPayout = 1;
+var autoActivated = false;
 var perClick = 1;
 var perClickCost = 25;
 
