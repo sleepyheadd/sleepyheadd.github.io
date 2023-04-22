@@ -1,5 +1,5 @@
 //Start of gallery script
-var x = 0;
+var x = 1;
 
 function changeImageUp() {
     x++;
@@ -12,36 +12,58 @@ function changeImageDown() {
 }
 
 function changeImage() {
-    var image = document.getElementById("imageScroll");
-    var numImage = 7;
-
+    var centerImage = document.getElementById("imageScrollC");
+    var leftImage = document.getElementById("imageScrollL");
+    var rightImage = document.getElementById("imageScrollR");
+    var numImage = 10;
     if (x > numImage-1) {
         x = 0;
     } else if (x < 0) {
         x = numImage-1;
     }
 
-    switch (x) {
+    chooseImage(x, centerImage, numImage);
+    chooseImage(x+1, rightImage, numImage);
+    chooseImage(x-1, leftImage, numImage);
+}
+
+function chooseImage(imageNum, image, numImage) {
+    if (imageNum > numImage-1) {
+        imageNum = 0;
+    } else if (imageNum < 0) {
+        imageNum = numImage-1;
+    }
+
+    switch (imageNum) {
         case 0:
             image.src = "Images/catboyyy.png";
             break;
         case 1:
-            image.src = "Images/scrimbloshirt.png";
+            image.src = "Images/drawinggirl.png";
             break;
         case 2:
-            image.src = "Images/treeboy.png";
+            image.src = "Images/somegod.png";
             break;
         case 3:
-            image.src = "Images/wormdevoursconneticut.png"
+            image.src = "Images/wormdevoursconneticut.png";
             break;
         case 4:
-            image.src = "Images/BASIL.png"
+            image.src = "Images/BASIL.png";
             break;
         case 5:
-            image.src = "Images/elminXT.png"
+            image.src = "Images/elminXT.png";
             break;
         case 6:
-            image.src = "Images/jadeharleybutCOOLER.jpg"
+            image.src = "Images/jadeharleybutCOOLER.jpg";
+            break;
+        case 7:
+            image.src = "Images/librarygirl.png";
+            break;
+        case 8:
+            image.src = "Images/treeboy.png";
+            break;
+        case 9:
+            image.src = "Images/scrimbloshirt.png";
             break;
     }
 }
