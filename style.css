@@ -76,7 +76,7 @@ body {
 }
 
 #imageScrollL, #imageScrollC, #imageScrollR {
-    width: 450px;
+    width: 60%;
     height: auto;
     background-color: #FFFFFF88;
     border-style: solid;
@@ -102,8 +102,12 @@ body {
   .head {
     text-align: center;
   }
-  #imageScroll {
-      width: 60%;
+  #imageScrollC {
+      width: 110%;
+  }
+  #imageScrollL, #imageScrollR {
+    width: 80%;
+    height: auto;
   }
   #gamesImg {
       width: 300px;
