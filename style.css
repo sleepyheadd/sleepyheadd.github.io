@@ -102,13 +102,6 @@ body {
   .head {
     text-align: center;
   }
-  #imageScrollC {
-      width: 110%;
-  }
-  #imageScrollL, #imageScrollR {
-    width: 80%;
-    height: auto;
-  }
   #gamesImg {
       width: 300px;
       height: auto;

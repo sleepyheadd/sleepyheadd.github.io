@@ -22,9 +22,9 @@ function changeImage() {
         x = numImage-1;
     }
 
+    chooseImage(x-1, leftImage, numImage);
     chooseImage(x, centerImage, numImage);
     chooseImage(x+1, rightImage, numImage);
-    chooseImage(x-1, leftImage, numImage);
 }
 
 function chooseImage(imageNum, image, numImage) {
