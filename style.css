@@ -189,3 +189,8 @@ a:link, a:visited, a:hover, a:active {
     width: 256px;
     align-self:end;
 }
+
+iframe {
+  margin: 8px;
+  border-radius:6px;
+}
