@@ -15,7 +15,7 @@ function changeImage() {
     var centerImage = document.getElementById("imageScrollC");
     var leftImage = document.getElementById("imageScrollL");
     var rightImage = document.getElementById("imageScrollR");
-    var numImage = 10;
+    var numImage = 11;
     if (x > numImage-1) {
         x = 0;
     } else if (x < 0) {
@@ -39,10 +39,10 @@ function chooseImage(imageNum, image, numImage) {
             image.src = "Images/catboyyy.png";
             break;
         case 1:
-            image.src = "Images/drawinggirl.png";
+            image.src = "Images/cubehead.png";
             break;
         case 2:
-            image.src = "Images/somegod.png";
+            image.src = "Images/sungod.png";
             break;
         case 3:
             image.src = "Images/wormdevoursconneticut.png";
@@ -60,10 +60,13 @@ function chooseImage(imageNum, image, numImage) {
             image.src = "Images/librarygirl.png";
             break;
         case 8:
-            image.src = "Images/treeboy.png";
+            image.src = "Images/drawinggirl.png";
             break;
         case 9:
             image.src = "Images/scrimbloshirt.png";
+            break;
+        case 10:
+            image.src = "Images/somegod.png";
             break;
     }
 }
