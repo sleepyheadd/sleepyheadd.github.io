@@ -44,13 +44,13 @@ iframe {
 }
 .aboutMe {
   background-image: url("Images/seatobelievebackground.png");
-  background-size:100%;
+  background-size:1500px;
+  background-color:rgb(96,111,141);
   background-repeat:no-repeat;
 
   display:flex;
   flex-direction:column;
-  
-  height:111.55%;
+  height:750px;
   margin-top:100px;
 
   border-width:10px;
