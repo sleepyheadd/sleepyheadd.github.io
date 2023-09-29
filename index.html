@@ -14,14 +14,14 @@
 <body>
     <script src="script.js"></script>
     <div class = "top">
-        <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; height:15%; margin-top: 2%">
-        <img src="Images/moonbread.png" alt="Radiotower Title" style="width:65%; height:auto; display:block; margin-left:auto; margin-right:auto; padding: 25px">
-        <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; height:15%; margin-top: 2%">
-        <hr><br>
+        <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; height:15%;">
+        <img src="Images/moonbread.png" alt="Radiotower Title" style="width:65%; height:65%;">
+        <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; height:15%;">
     </div>
-     <div id="wrapper" class="center firstmodule" style="background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.7),rgba(255,255,255,0.4),rgba(255,255,255,0)); ">
-        <img src="Images/games!.png" alt="Games!" id="gamesImg" />
-        <div id="optionContainer">
+
+    <div class="gamesSection">
+        <img src="Images/games!.png" alt="Games!" style="width:40%; height:40%; background-image: radial-gradient(rgba(255,255,255,0.5),rgba(1,1,1,0),rgba(1,1,1,0))"/>
+        <div class="gamesContainer">
             <iframe src="https://itch.io/embed/2110868" width="208" height="167" frameborder="0"><a href="https://moonbreadgames.itch.io/shoecake">Shoecake by Moon Bread</a></iframe>
             <iframe src="https://itch.io/embed/1936579" width="208" height="167" frameborder="0"><a href="https://moonbreadgames.itch.io/panicked-pizzas">Panicked Pizzas! by Moon Bread</a></iframe>
             <iframe src="https://itch.io/embed/1841420" width="208" height="167" frameborder="0"><a href="https://moonbreadgames.itch.io/interstellaroutlaw">Interstellar Outlaw by Moon Bread</a></iframe>
@@ -30,28 +30,36 @@
         <p style="text-align: center;"><a href="https://moonbreadgames.itch.io">[All games can be found at my itch.io profile here!]</a></p>
     </div>
 
-    <div id="wrapper" class="center" style="padding-bottom:150px;">
-        <img src="Images/boyandbeetransparent.png" alt="A Boy and a Bee" class="bimg" style="display: flex; float:left; padding: 10px;">
-        <p class="head">Art and Stuff</p>
-        <p><a href="https://www.instagram.com/moonbreaddd/">[My art stuff can be found here]</a>! I don't post often but I like to use it as a place to collect finished drawings.</p>
-        <p>If you would like to buy <a href="https://www.redbubble.com/people/conscious-ink/shop">[stickers or shirts]</a>, then I have a shop up on Redbubble!</p>
-        <p>Sometimes I post silly things on my <a href="https://www.youtube.com/@moonbreadd">[youtube channel]</a>!</p>
-        <p>The best way to get in touch with me would be at dmbeck9459@gmail.com =)</p>
+    <div class="zoomedinMessage">
+        <h1>Art and Other Creations</h1>
+        <div style="display:flex; flex-direction:row; align-items: right; justify-content:center;">
+            <img src="Images/arrow.png" onclick="changeImageDown()" style="transform: scaleX(-1); width: 50px; height: 50px; padding-top:65px" />
+            <img src="Images/cubehead.png" id="imageScrollC" style="width: 180px; height: 180px;"/>
+            <img src="Images/arrow.png" onclick="changeImageUp()" style="width: 50px; height: 50px; padding-top:65px" />
+        </div>
+        <p>I make silly videos on my <a  href="https://www.youtube.com/@moonbreadd">Youtube!</a></p>
+        <p>Most of my art is posted on my <a  href="https://www.instagram.com/moonbreaddd/">Instagram.</a></p>
+        <p>I have some t-shirts and other things on <a  href="https://www.redbubble.com/people/conscious-ink/shop">Redbubble :3</a></p>
+        <p>If you'd like to contact me: dmbeck9459@gmail.com!</a></p>
     </div>
 
-    <div id="wrapper" class="center">
-        <h1 style="font-size: 80px; font-weight: bold; text-shadow: 0px 2px #cccccc; color:darkolivegreen;">Gallery</h1>
-
-        <div style="display:flex; flex-direction:row; align-items: center; justify-content:center;">
-            <img src="Images/arrow.png" onclick="changeImageDown()" style="transform: scaleX(-1); width: 20%; height: auto;" />
-            <img src="Images/catboyyy.png" id="imageScrollL" style="width: 20%;height: auto;"/>
-            <img src="Images/cubehead.png" id="imageScrollC"/>
-            <img src="Images/sungod.png" id="imageScrollR" style="width: 20%;height: auto;" />
-            <img src="Images/arrow.png" onclick="changeImageUp()" style="width: 20%; height: auto;" />
+    <div class="aboutMe">
+        <h1 style="margin:50px; padding-top:25px; font-size:75px;">Art and Other Creations</h1>
+        <div style="display:flex; flex-direction:row; align-items: right; justify-content:right; padding-right:60px;">
+            <img src="Images/arrow.png" onclick="changeImageDown()" style="transform: scaleX(-1); width: 50px; height: 50px; padding-top:65px" />
+            <img src="Images/catboyyy.png" id="imageScrollL" style="width: 150px; height: 150px;"/>
+            <img src="Images/cubehead.png" id="imageScrollC" style="width: 180px; height: 180px;"/>
+            <img src="Images/sungod.png" id="imageScrollR" style="width: 150px; height: 150px;" />
+            <img src="Images/arrow.png" onclick="changeImageUp()" style="width: 50px; height: 50px; padding-top:65px" />
         </div>
+        <p style="float:right; padding-right:60px;">I make silly videos on my <a style="  color:rgb(197, 173, 119);" href="https://www.youtube.com/@moonbreadd">Youtube!</a></p>
+        <p style="float:right; padding-right:60px;">Most of my art is posted on my <a style="  color:rgb(197, 173, 119);" href="https://www.instagram.com/moonbreaddd/">Instagram.</a></p>
+        <p style="float:right; padding-right:60px;">I have some t-shirts and other things on <a style="  color:rgb(197, 173, 119);" href="https://www.redbubble.com/people/conscious-ink/shop">Redbubble :3</a></p>
+        <p style="float:right; padding-right:60px;">If you'd like to contact me: dmbeck9459@gmail.com!</a></p>
+    </div>
 
-        <div id="bottomArea">
-        <div style="display:flex; margin-top:50px; width:400px;">
+    <div id="bottomArea">
+        <div style="display:flex; margin-top:50px; width:400px; padding-left: 50px;">
             <img src="Images/radiotwoerss.png" style="width:200px; height:fit-content; padding-top:50px; float:left; padding:20px"/>
             <div style="display:flex; flex-direction:column; align-items:start;">
                 <h2>About Me</h2>
@@ -59,7 +67,7 @@
                     I like making games and drawing in my free time.</p>
             </div>
             </div>
-        <div style="display: flex;align-items: center;">
+        <div style="display: flex;align-items: center; padding-right:50px;">
             <div style="display:flex; flex-direction:column; padding-right: 10px;">
                 <p id="choctext" style="color: darkolivegreen;">0 Warm Chocolate Croissants</p>
                 <p id="chocdesc" style="color: darkolivegreen; font-size:15px;">1 per click / 0 per second</p>
@@ -70,7 +78,6 @@
             <img src="Images/choccros1.png" alt="a chocolate croissant" id="choccros" onclick="ChocClicked()" />
         </div>
         </div>
-    </div>
 </body>
 
 </html>
