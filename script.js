@@ -12,6 +12,7 @@ function changeImageDown() {
 }
 
 function changeImage() {
+    var centerImage2 = document.getElementById("imageScrollCe");
     var centerImage = document.getElementById("imageScrollC");
     var leftImage = document.getElementById("imageScrollL");
     var rightImage = document.getElementById("imageScrollR");
@@ -24,6 +25,7 @@ function changeImage() {
 
     chooseImage(x-1, leftImage, numImage);
     chooseImage(x, centerImage, numImage);
+    chooseImage(x, centerImage2, numImage);
     chooseImage(x+1, rightImage, numImage);
 }
 
