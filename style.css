@@ -70,7 +70,7 @@ iframe {
   padding-top: 200px;
   font-family: 'Quicksand', serif;
 }
-#imageScrollL, #imageScrollC, #imageScrollR {
+#imageScrollL, #imageScrollC, #imageScrollR, #imageScrollCe {
   background-color: #FFFFFF88;
   border-style: solid;
   border-radius: 10%;
