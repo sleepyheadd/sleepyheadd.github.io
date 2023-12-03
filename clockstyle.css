@@ -54,16 +54,16 @@ body {
 }
 
 .clockbody .number1 {--rotation: 2.5deg; --fontsize: 12px;}
-.clockbody .number2 {--rotation: 10deg; --fontsize: 14px;}
-.clockbody .number3 {--rotation: 22.5deg; --fontsize: 16px;}
+.clockbody .number2 {--rotation: 10deg; --fontsize: 13px;}
+.clockbody .number3 {--rotation: 22.5deg; --fontsize: 15px;}
 .clockbody .number4 {--rotation: 40deg; --fontsize: 18px;}
-.clockbody .number5 {--rotation: 62.5deg; --fontsize: 20px;}
-.clockbody .number6 {--rotation: 90deg; --fontsize: 22px;}
-.clockbody .number7 {--rotation: 122.5deg; --fontsize: 24px;}
-.clockbody .number8 {--rotation: 160deg; --fontsize: 26px;}
-.clockbody .number9 {--rotation: 202.5deg; --fontsize: 28px;}
-.clockbody .number10 {--rotation: 250deg; --fontsize: 30px;}
-.clockbody .number11 {--rotation: 302.5deg; --fontsize: 32px;}
+.clockbody .number5 {--rotation: 62.5deg; --fontsize: 22px;}
+.clockbody .number6 {--rotation: 90deg; --fontsize: 27px;}
+.clockbody .number7 {--rotation: 122.5deg; --fontsize: 33px;}
+.clockbody .number8 {--rotation: 160deg; --fontsize: 40px;}
+.clockbody .number9 {--rotation: 202.5deg; --fontsize: 48px;}
+.clockbody .number10 {--rotation: 250deg; --fontsize: 57px;}
+.clockbody .number11 {--rotation: 302.5deg; --fontsize: 67px;}
 
 .clockbody .hand {
     --rotation: 0;
