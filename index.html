@@ -15,7 +15,7 @@
     <script src="indexscript.js"></script>
     <div class = "top">
         <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; height:15%;">
-        <img src="Images/moonbread.png" alt="Radiotower Title" style="width:65%; height:65%;">
+        <img src="Images/moonbread.png" class="hover" alt="Radiotower Title" style="width:65%; height:65%;">
         <img src="Images/crowdance.gif" id="crowdance" alt="crow dance" style="width:15%; height:15%;">
     </div>
 
@@ -62,6 +62,8 @@
         </div>
     </div>
 
+    <marquee direction="left">Pssst.... don't tell anyone, but I'm gonna give you a bunch of chocolate croissants if you click <a style= "color:navy; cursor:pointer;" onclick="giveFreeCroissants()">this</a>.</marquee>
+
     <div id="bottomArea">
         <div style="display:flex; margin-top:50px; width:400px; padding-left: 50px;">
             <img src="Images/radiotwoerss.png" style="width:200px; height:fit-content; padding-top:50px; float:left; padding:20px"/>
@@ -79,9 +81,9 @@
                 <button id="autoClick" onclick="IncAutoClick()">(50) +1 Auto Click</button>
                 <button id="increaseButton" onclick="IncButtonPayout()">(200) Double Button Upgrade Amount</button>
             </div>
-            <img src="Images/choccros1.png" alt="a chocolate croissant" id="choccros" onclick="ChocClicked()" />
+            <img src="Images/choccros1.png" alt="a chocolate croissant" class="hover" id="choccros" onclick="ChocClicked()" />
         </div>
-        </div>
+    </div>
 </body>
 
 </html>

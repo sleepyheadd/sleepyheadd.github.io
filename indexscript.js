@@ -117,6 +117,8 @@ function IncClick() {
 var autoClick = 0;
 var autoClickCost = 50;
 
+var hasGottenFreeThing = false;
+
 function IncAutoClick() {
     var autoClickId = document.getElementById("autoClick");
 
@@ -171,5 +173,13 @@ function AutoClicker() {
     setTimeout(function () {
         AutoClicker();
     }, 1000);
+}
+
+function giveFreeCroissants() {
+    if (!hasGottenFreeThing) {
+        hasGottenFreeThing = true;
+        total += 1000;
+        document.getElementById("choctext").textContent = total + " Warm Chocolate Croissants";
+    }
 }
 //End of choccros clicker
